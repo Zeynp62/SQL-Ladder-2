@@ -103,7 +103,7 @@ FROM
 --     * _NOTE2:_ The symbols for francs is simply `Fr.` or `fr.`.
 -- So an example output will look like `100,000 Fr.`.
 SELECT
-	ROUND(AVG(SALARY * 0.97))::MONEY AS AVG_SALARY_IN_CHF,
+	ROUND(AVG(SALARY * 0.97))::MONEY AS AVG_CHF_SALARY,
 	ROUND(AVG(SALARY))::MONEY AS AVG_USD_SALARY
 FROM
 	EMPLOYEES;
